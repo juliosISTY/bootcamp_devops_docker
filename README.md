@@ -6,7 +6,7 @@ To build and run the Dockerfile for test API run in your shell these commands:
 ```shell
 docker build -t student-list_api:v1 .
 docker run -d -p 5010:5000 -v ${PWD}/student_age.json:/data/student_age.json --name pozos-api student-list_api:v1
-curl -u toto:python -X GET http://127.0.0.1:5010>/pozos/api/v1.0/get_student_age
+curl -u toto:python -X GET http://127.0.0.1:5010/pozos/api/v1.0/get_student_age
 ```
 We will in console line result like:
 ```json
